@@ -49,8 +49,8 @@ else ifeq ($(CONFIG),Dist)
 endif
 
 # Include paths
-VERN_INCLUDES = -I$(VERN_SRC_DIR)
-SANDBOX_INCLUDES = -I$(VERN_SRC_DIR)
+VERN_INCLUDES = -I$(VERN_SRC_DIR) -IVern/vendor/spdlog/include
+SANDBOX_INCLUDES = -I$(VERN_SRC_DIR) -IVern/vendor/spdlog/include
 
 # Default target
 .PHONY: all
